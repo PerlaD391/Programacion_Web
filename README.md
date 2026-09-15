@@ -1,15 +1,15 @@
 # Programacion-Web
 Este es el repositorio de los ejercicios de programacion web 
 
-#Ejercicios de Programación Web - HTML, CSS y JS
+# Ejercicios de Programación Web - HTML, CSS y JS
 
 Este repositorio contiene la colección completa de ejercicios desarrollados durante el curso de Programación Web, abarcando desde los fundamentos de HTML5 hasta la integración de JavaScript y el despliegue en línea mediante GitHub Pages.
 
-##Objetivo de la Actividad
+## Objetivo de la Actividad
 
 Integrar todos los ejercicios de la actividad del Tema 2 en un solo repositorio público, publicado en línea mediante GitHub Pages, como evidencia del trabajo realizado. El sitio debe funcionar correctamente, respetando las rutas relativas de imágenes, CSS y JavaScript.
 
-##Contenido de los Ejercicios
+## Contenido de los Ejercicios
 
 ### Bloque 1: Fundamentos de HTML
 - Ejercicio 1: Primera página HTML ("Hola Mundo") con estructura básica de HTML5.
