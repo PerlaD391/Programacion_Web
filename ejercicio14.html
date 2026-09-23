@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14 - Análisis de Números</title>
+    <link rel="stylesheet" href="css/ejercicio14.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Análisis de Números</h1>
+        <p class="subtitulo">Ingresa números separados por comas para obtener el mayor, menor y promedio.</p>
+
+        <form class="formulario" id="formulario">
+            <div class="grupo-formulario">
+                <label for="numeros">Números (separados por coma)</label>
+                <input 
+                    type="text" 
+                    id="numeros" 
+                    placeholder="Ej: 10, 20, 30, 40, 50" 
+                    autocomplete="off">
+            </div>
+
+            <button type="button" class="boton-convertir" id="btnCalcular">
+                Calcular
+            </button>
+
+            <div class="grupo-formulario">
+                <label for="mayor">Número Mayor</label>
+                <input type="text" id="mayor" readonly>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="menor">Número Menor</label>
+                <input type="text" id="menor" readonly>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="promedio">Promedio</label>
+                <input type="text" id="promedio" readonly>
+            </div>
+
+            <p class="mensaje-error" id="mensajeError"></p>
+        </form>
+    </div>
+
+    <script src="js/ejercicio14.js"></script>
+</body>
+</html>

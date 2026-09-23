@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15 - Calificaciones</title>
+    <link rel="stylesheet" href="css/ejercicio15.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Gestión de Calificaciones</h1>
+        <p class="subtitulo">Agrega estudiantes y calcula el promedio, la nota más alta y la más baja.</p>
+
+        <form class="formulario" id="formulario">
+            <div class="grupo-formulario">
+                <label for="nombre">Nombre del Estudiante</label>
+                <input type="text" id="nombre" placeholder="Ej: Juan" autocomplete="off">
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="calificacion">Calificación</label>
+                <input type="text" id="calificacion" placeholder="Ej: 85" autocomplete="off">
+            </div>
+
+            <button type="button" class="boton-convertir" id="btnAgregar">
+                Agregar Estudiante
+            </button>
+
+            <ul class="lista-estudiantes" id="listaEstudiantes"></ul>
+
+            <button type="button" class="boton-convertir boton-secundario" id="btnCalcular">
+                Calcular Resultados
+            </button>
+
+            <div class="grupo-formulario">
+                <label for="promedio">Promedio</label>
+                <input type="text" id="promedio" readonly>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="masAlta">Calificación más Alta</label>
+                <input type="text" id="masAlta" readonly>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="masBaja">Calificación más Baja</label>
+                <input type="text" id="masBaja" readonly>
+            </div>
+
+            <p class="mensaje-error" id="mensajeError"></p>
+        </form>
+    </div>
+
+    <script src="js/ejercicio15.js"></script>
+</body>
+</html>

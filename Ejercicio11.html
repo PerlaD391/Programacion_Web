@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11 - Conversor Kilometros a millas</title>
+    <link rel="stylesheet" href="css/ejercicio11.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Conversor de Distancias</h1>
+        <p class="subtitulo">Ingresa la distancia en kilometros y obtén su equivalente en millas.</p>
+
+        <form class="formulario" id="formulario">
+            <div class="grupo-formulario">
+                <label for="kilometros">Kilometros</label>
+                <input 
+                    type="text" 
+                    id="kilometros" 
+                    placeholder="Ej: 10" 
+                    autocomplete="off">
+            </div>
+
+            <button type="button" class="boton-convertir" id="btnConvertir">
+                Convertir
+            </button>
+
+            <div class="grupo-formulario">
+                <label for="millas">Resultado en millas</label>
+                <input 
+                    type="text" 
+                    id="millas" 
+                    placeholder="Aquí aparecerá el resultado" 
+                    readonly>
+            </div>
+
+            <p class="mensaje-error" id="mensajeError"></p>
+        </form>
+    </div>
+
+    <script src="js/ejercicio11.js"></script>
+</body>
+</html>

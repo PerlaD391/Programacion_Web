@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16 - Calculadora</title>
+    <link rel="stylesheet" href="css/ejercicio16.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Calculadora Básica</h1>
+        <p class="subtitulo">Realiza operaciones básicas con dos números usando funciones flecha.</p>
+
+        <form class="formulario" id="formulario">
+            <div class="grupo-formulario">
+                <label for="numero1">Número 1</label>
+                <input type="text" id="numero1" placeholder="Ej: 10" autocomplete="off">
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="numero2">Número 2</label>
+                <input type="text" id="numero2" placeholder="Ej: 5" autocomplete="off">
+            </div>
+
+            <!-- Cada botón llama a calcularOperacion con el tipo (como pide el PDF) -->
+            <div class="botones-operaciones">
+                <button type="button" class="boton-convertir boton-suma" onclick="calcularOperacion('sumar')">Sumar (+)</button>
+                <button type="button" class="boton-convertir boton-resta" onclick="calcularOperacion('restar')">Restar (−)</button>
+                <button type="button" class="boton-convertir boton-multiplicacion" onclick="calcularOperacion('multiplicar')">Multiplicar (×)</button>
+                <button type="button" class="boton-convertir boton-division" onclick="calcularOperacion('dividir')">Dividir (÷)</button>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="resultado">Resultado</label>
+                <input type="text" id="resultado" placeholder="Aquí aparecerá el resultado" readonly>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/ejercicio16.js"></script>
+</body>
+</html>
