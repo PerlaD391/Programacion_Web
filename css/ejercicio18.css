@@ -1,0 +1,122 @@
+:root {
+    --color-primario: #927dc1;
+    --color-secundario: #4cc9f0;
+    --color-fondo: #f8f9fa;
+    --color-texto: #2b2d42;
+    --color-borde: #e9ecef;
+    --color-error: #e63946;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.tarjeta-principal {
+    max-width: 550px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.tarjeta-principal .card-header {
+    background-color: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: none;
+}
+
+.tarjeta-principal .card-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.tarjeta-principal .card-header .subtitulo {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+.btn-primario {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primario:hover {
+    background-color: #7a63a8;
+    border-color: #7a63a8;
+    color: white;
+}
+
+.item-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #f1f3f5;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    word-break: break-word;
+    animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.boton-eliminar {
+    background-color: var(--color-error);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.boton-eliminar:hover {
+    background-color: #c92a37;
+    color: white;
+}
+
+
+.mensaje-error {
+    color: var(--color-error);
+    font-size: 14px;
+    text-align: center;
+    min-height: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
+.lista-vacia {
+    text-align: center;
+    color: #adb5bd;
+    font-size: 14px;
+    font-style: italic;
+    padding: 15px;
+    list-style: none;
+}
