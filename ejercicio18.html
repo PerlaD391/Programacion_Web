@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18 - Manipulación del DOM</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/ejercicio18.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card tarjeta-principal">
+            
+            <div class="card-header">
+                <h1>Agregar y Eliminar Elementos</h1>
+                <p class="subtitulo mb-0">Escribe un elemento y agrégalo a la lista. Cada uno tendrá su botón para eliminar.</p>
+            </div>
+
+            <div class="card-body p-4">
+                <form id="formulario">
+                    
+                    <div class="mb-3">
+                        <label for="nuevoElemento" class="form-label fw-semibold">Nuevo Elemento</label>
+                        <input 
+                            type="text" 
+                            id="nuevoElemento" 
+                            class="form-control"
+                            placeholder="Escribe algo..." 
+                            autocomplete="off">
+                    </div>
+
+                    <button type="button" class="btn btn-primario w-100 mb-3" id="btnAgregar">
+                        Agregar
+                    </button>
+
+                    <ul class="list-unstyled mb-3" id="lista"></ul>
+
+                    <p class="mensaje-error" id="mensajeError"></p>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/ejercicio18.js"></script>
+</body>
+</html>
